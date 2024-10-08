@@ -1,49 +1,100 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Em đồng ý làm người iuu anhh nhaa bé:3</title>
-    <title>Thoát ra hoặc không chọn thì làm vợ anhh</title>
-</head>
 <body>
-    <div class="container">
-        
-        <div id="gifContainer">
-            <img id="gifContainerImg" src="mocha.gif" alt="Ositos Iniciales" ">
+  <article>
+    <div class="envelope-container">
+      <div class="message message-1" id="message-1">
+        <h1>Anh xin nhõi em bóee</h1>
+        <p>Cóa quà cho em nè bấm vào hình trái tim nhakk <3 </p>
+      </div>
+      <div class="message message-2" id="message-2">
+        <h2>Anh iu em béee nhìu ơi nhìuuu</h2>
+      </div>
+      <button class="close-btn" id="close-btn" onclick="toggleEnvelope()">close envelope</button>
+      <button class="heart-btn" id="heart-btn" onclick="toggleEnvelope()">&#10084;
+        <span class="heart-btn-text">bấm đây nè </span>
+      </button>
+      <div class="envelope-flap">
+        <svg class="inner">
+          <polygon class="inner-polygon" id="inner-polygon" points="5,0 345,0 175,145" ></polygon>
+        </svg>
+        <svg class="outer" id="outer">
+          <polygon class="outer-polygon" points="5,150 345,150 175,0"></polygon>
+        </svg>
+        <div class="floating-hearts">
+          <div class="hearts-row row-10">
+            <div>
+              <i class="ri-heart-fill"></i>
+            </div>
+          </div>
+          <div class="hearts-row row-9">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-8">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-7">
+            <div><i class="ri-heart-fill"></i></div>            
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-6">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-5">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-4">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-3">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-2">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-1">
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
         </div>
-        <div id="happyGifContainer" style="display: none;">
-            <img src="mocha5final.gif" alt="Ositos Felices" style="width: 100%; height: 100%;">
-        </div>
-        <div id="happyGifContainer2" style="display: none;">
-            <img src="mocha6final.gif" alt="Ositos Felices" style="width: 100%; height: 100%;">
-        </div>
-        <div id="happyGifContainer3" style="display: none;">
-            <img src="mocha7final.gif" alt="Ositos Felices" style="width: 100%; height: 100%;">
-        </div>
-        <div id="happyGifContainer4" style="display: none;">
-            <img src="mocha9final.gif" alt="Ositos Felices" style="width: 100%; height: 100%;">
-        </div>
-        <div id="sadGifContainer" style="display: none;">
-            <img src="mocha2.gif" alt="Osito Triste" style="width: 80%; height: 80%;">
-        </div>
-        <div id="sadGifContainer1" style="display: none;">
-            <img src="mocha3.gif" alt="Osito Triste" style="width: 80%; height: 80%;">
-        </div>
-        <div id="sadGifContainer2" style="display: none;">
-            <img src="mocha4.gif" alt="Osito Triste" style="width: 80%; height: 80%;">
-        </div>
-        
-        <h1 id="question">Em đồng ý làm người iuu anhh nhaa bé:3</h1>
-        <title>Thoát ra hoặc không chọn thì làm vợ anhh</title>
-        <div id="messageContainer" style="display: none;"></div>
-
-        <button id="siBtn">Có ạ</button>
-        <button id="noBtn">Khôngg</button>
-        
+      </div>
+      <div class="envelope-base"></div>
     </div>
-
-    <script src="script.js"></script>
+  </article>  
 </body>
-</html>
